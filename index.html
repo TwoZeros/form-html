@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8" />
+ <title>First form</title>
+ </head>
+ <body>
+ <h2>Let’s search something</h2>
+ <form action="/submit.php" method="GET" >
+    <div>
+        <label for="search">search</label>
+        <input type="text" id="search" name="search-text" value="Купить чай" />
+    </div>
+<div>
+    <label for="email">Password</label>
+    <input type="email" id="email" name="password" />
+</div>
+<div >
+    <label for="message">Message</label>
+    <textarea id="message" name="userMessage" rows="9" cols="60" ></textarea>
+</div>
+<div contenteditable="true" name="dfadd">adfdsf</div>
+<p><input type="radio" name="drink" value="pivo" id="pivo"> 
+     <label for="pivo">Пиво</label> 
+     <input type="radio" name="drink" value="tea" id="tea" checked>  
+     <label for="tea">Чай</label> 
+    <input type="radio" name="drink" value="cofee" id="cofee">
+     <label for="cofee">Кофе</label> 
+</p>
+<fieldset>
+    <legend>Choose your monster's features:</legend>
+  
+    <div>
+      <input type="checkbox" id="scales" name="scales" checked />
+      <label for="scales">Scales</label>
+    </div>
+  
+    <div>
+      <input type="checkbox" id="horns" name="horns" />
+      <label for="horns">Horns</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="intelegent" name="intelegent" />
+        <label for="intelegent">Intelegent</label>
+      </div>
+  </fieldset>
+
+  <select id="genreSuggestions" name="genreSuggestions">
+    <option selected>Ничего</option>
+    <option >Комедия</option>
+    <option>Horror</option>
+    <option>Drama</option>
+    <option>Thriller</option>
+    <option>Science Fiction</option>
+    <option >Fantasy</option>
+</select>
+   
+  <input type="date" name="start" id="start">
+ <input type="submit" value="Search" />
+ </form>
+ </body>
+</html>
